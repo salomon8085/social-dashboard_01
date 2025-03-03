@@ -16,7 +16,7 @@ const HashtagAnalysis = () => {
 
   // 🔄 Obtener datos desde db.json (simulación de API)
   useEffect(() => {
-    fetch("http://localhost:5000/hashtags")
+    fetch("https://social-dashboard-api.onrender.com/hashtags")
       .then((res) => res.json())
       .then((data) => {
         setHashtags(data);

@@ -15,7 +15,7 @@ const TopPostsTable = () => {
   useEffect(() => {
     // Fetch data from JSON Server when component mounts
 
-    fetch("http://localhost:5000/posts")
+    fetch("https://social-dashboard-api.onrender.com/posts")
       .then((res) => {
         return res.json();
       })

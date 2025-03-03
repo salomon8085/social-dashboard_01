@@ -16,7 +16,7 @@ const KPISection = () => {
 
   useEffect(() => {
     const fetchMetrics = () => {
-      fetch("http://localhost:5000/metrics")
+      fetch("https://social-dashboard-api.onrender.com/metrics")
         .then((res) => res.json())
         .then((data) => setMetrics(data))
         .catch((error) => console.error("Error fetching metrics:", error));
